@@ -1,0 +1,192 @@
+@charset "ISO-8859-1";
+img {
+    width: 100%;
+}
+
+  
+  body {
+    font-family: Arial, sans-serif;
+     margin: 0;
+    padding: 0;
+  }
+.login {
+    height: 1000px;
+    width: 100%;
+    background: radial-gradient(#d7463b, #d95662);
+    position: relative;
+}
+a {
+    color: #ff704d;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.login_box {
+    width: 1050px;
+    height: 700px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #000000;
+    display: flex;
+    overflow: hidden;
+}
+
+.login_box.inscription {
+    height: auto !important;
+}
+
+.login_box .left {
+    width: 41%;
+    height: 100%;
+    padding: 25px 25px;
+}
+
+.login_box .right {
+    width: 59%;
+    height: 100%
+}
+
+.login_box.inscription .right{
+    height: auto !important;
+}
+
+h5.inscription-employeur{
+  color: #f00;
+    font-size: 17px;
+    text-align: center;
+}
+
+h5.inscription-demendeur{
+    color: #f00;
+      font-size: 17px;
+      text-align: center;
+  }
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+
+.left .top_link {
+    height: 20px
+}
+
+.left .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left .contactET {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 90%;
+    width: 73%;
+    margin: auto;
+}
+
+.left h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px ;
+    font-weight: bold;
+}
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+ }
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #c93f35;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.left {
+    background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #c93f35;
+    color: #f3f1f4;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px #000000;
+    -moz-box-shadow: 0px 9px 15px -11px #000000;
+    box-shadow: 0px 9px 15px -11px #000000;
+}
+
+#registration_form_agreeTerms{
+    margin: 1px 0px;
+}
+
+.left h4 {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.right {
+    background-image: url(1727.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .login_box{
+        width: auto;
+        display: contents;
+    }
+}
+@media screen and (max-width: 900px) {
+    .login_box{
+        width: auto;
+    }
+    .login_box .right {
+        display: none;
+    }
+    .login_box .left {
+        width: 100%;
+        padding: 5px 5px;
+    }
+    .login {
+        height: 800px;
+        background: radial-gradient(#fcb205, #fdbf04);;;
+    }
+}
